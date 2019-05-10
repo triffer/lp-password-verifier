@@ -19,9 +19,10 @@ lpass export > lastpass.csv
 ## Start the application
 
 ### Using the Docker container
-Simply pull the image [riffert/lp-password-verifier](ADD LINK) and mount the CSV file under **/export.csv**.
+Simply pull the image [triffer/lp-password-verifier](https://hub.docker.com/r/triffer/lp-password-verifier) and mount the CSV file under 
+**/export.csv**.
 ````bash
-docker run --rm -v /path/to/csv/file.csv:/export.csv riffert/lp-password-verifier
+docker run --rm -v /path/to/csv/file.csv:/export.csv triffer/lp-password-verifier
 ````
 
 ### Using the binary

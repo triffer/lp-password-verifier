@@ -22,10 +22,10 @@ func Main() {
 		}
 	}
 
-	fmt.Printf("\nThe following passwords have been pwned\n\n")
+	fmt.Printf("\nThe following passwords have been pwned\n")
 	for _, pwnedPassword := range verifiedPwnedPasswords {
-		fmt.Printf("Name: %s \nPassword: %s \n", pwnedPassword.Name, pwnedPassword.Password)
 		fmt.Println("--------------------------------")
+		fmt.Printf("Name: %s \nPassword: %s \n", pwnedPassword.Name, pwnedPassword.Password)
 	}
 }
 
@@ -44,4 +44,3 @@ func isPasswordPwned(passwordHash string, pwnedPasswordHashes []string) bool {
 
 	return false
 }
-
